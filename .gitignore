@@ -8,3 +8,5 @@ CabbageInstall/
 *.zip
 CabbageRack
 CabbageManual
+
+Cabbage.app/**
