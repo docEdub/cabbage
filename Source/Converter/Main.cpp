@@ -34,11 +34,10 @@ int main (int argc, char* argv[])
     String args;
     // Your code goes here!
     juce::ignoreUnused (argc, argv);
-    
-    std::cout << "Usage: CLIConverter --export-TYPE=\"name of csd file\" --destination=\"some absolute or relative dir\"\n";
-    std::cout << "If you leave out the destination, exports will be placed into the same folder as the csd file\n\n";
 
-    
+    //std::cout << "Usage: CLIConverter --export-TYPE=\"name of csd file\" --destination=\"some absolute or relative dir\"\n";
+    //std::cout << "If you leave out the destination, exports will be placed into the same folder as the csd file\n\n";
+
     for( int i = 0 ; i < argc ; i++)
     {
         args.append(argv[i], 1000);
