@@ -273,7 +273,7 @@ void PluginExporter::writePluginFileToDisk(File fc, File csdFile, File VSTData, 
     if (exportedPlugin.existsAsFile())
         DBG("plugin exists");
 
-    auto mkdir = "mkdir " + exportedPlugin.getParentDirectory().getFullPathName().toStdString();
+    auto mkdir = "mkdir -p " + exportedPlugin.getParentDirectory().getFullPathName().toStdString();
     system(mkdir.c_str());
 
 #if JUCE_WINDOWS
